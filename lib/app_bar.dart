@@ -9,15 +9,9 @@ AppBar myAppBar({
     surfaceTintColor: Colors.transparent,
     centerTitle: true,
     primary: true,
-    title: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(10),
-          child: themeChangerModeButton,
-        ),
-        Text('width  : ${MediaQuery.of(context).size.width} height : ${MediaQuery.of(context).size.height}'),
-      ],
+    title: Padding(
+      padding: const EdgeInsets.all(10),
+      child: themeChangerModeButton,
     ),
   );
 }

@@ -132,7 +132,6 @@ class CalculatorNeuAppState extends State<CalculatorNeuApp> {
                     ),
                   ),
                 ),
-                SizedBox(height: MediaQuery.of(context).size.height * 0.084,),
                 Column(
                   children: [
                     Row(
@@ -701,7 +700,7 @@ class _FunctionButtonState extends State<FunctionButton> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: NeuContainer(
         buttonBackGroundColor: Theme.of(context).primaryColor,
         operation: widget.operation,
@@ -757,7 +756,7 @@ class _RoundedButtonState extends State<RoundedButton> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding:  const EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: NeuContainer(
         buttonBackGroundColor: widget.title == '='
             ? Theme.of(context).primaryColorLight
